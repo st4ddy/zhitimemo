@@ -1,0 +1,34 @@
+// @import "fonts";
+@import "./reset.scss";
+@import "./header.scss";
+@import "./wwd.scss";
+
+html {
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+@media (min-width: 744px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 1444px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
