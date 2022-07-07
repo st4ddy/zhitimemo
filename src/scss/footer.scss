@@ -1,0 +1,107 @@
+footer {
+    height: 250px;
+    width: 100%;
+    background-color: #0A0A0A;
+    
+}
+a {
+    text-decoration: none;
+}
+.cont {
+    color: white;
+    font-family: 'Manrope';
+font-size: 11px;
+line-height: 15px;
+padding-top: 20px;
+}
+
+.num {
+    position: relative; /* Относительное позиционирование */
+   }
+   .num::after {
+    content: ''; 
+    position: absolute; 
+    background: white; 
+    left: 0; 
+    bottom: -10px; 
+    width: 63%; 
+    height: 1px; 
+   }
+
+   .imgLogoFooter {
+width: 150px;
+   }
+
+   .contacts {
+    display: flex;
+   }
+
+   .contactsInfo {
+    width: 50%;
+   }
+
+.linksSocNet {
+margin-top: 42px;
+display: flex;
+justify-content: space-around;
+position: relative;
+}
+
+.linksSocNet::after {
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #848484; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: -11px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+}
+
+ .linksItem {
+    width: 21px;
+ }
+
+ .pr {
+    font-family: 'Manrope';
+font-weight: 200;
+font-size: 11px;
+line-height: 15px;
+color: #FFFFFF;
+margin-top: 35px;
+ }
+
+ @media (min-width: 744px) {
+  footer {
+    height: 474px;
+  }  
+  .cont {
+    font-size: 24px;
+line-height: 33px;
+padding-top: 60px;
+  }
+  .num::after {
+    width: 53%;
+    bottom: -25px;
+  }
+  .imgLogoFooter {
+    width: 300px;
+       }
+       .linksSocNet {
+            margin-top: 84px;
+       }
+       .linksItem {
+        width: 42px;
+     }
+     .linksSocNet::after {
+        bottom: -20px; /* Положение линии */
+    }
+ }
+ 
+@media (min-width: 1444px) {
+    .linksSocNet {
+        justify-content: space-around;
+        }
+        .imgLogoFooter {
+            width: 450px;
+          }
+}

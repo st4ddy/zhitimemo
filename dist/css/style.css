@@ -1,7 +1,11 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@300;700&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -17,11 +21,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  line-height: 1;
+  line-height: 0;
 }
 
 ol, ul {
   list-style: none;
+}
+
+body {
+  line-height: 1;
 }
 
 blockquote, q {
@@ -144,6 +152,210 @@ table {
 .wwdMain img {
   width: 100%;
   height: 100%;
+}
+
+footer {
+  height: 250px;
+  width: 100%;
+  background-color: #0A0A0A;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cont {
+  color: white;
+  font-family: "Manrope";
+  font-size: 11px;
+  line-height: 15px;
+  padding-top: 20px;
+}
+
+.num {
+  position: relative; /* Относительное позиционирование */
+}
+
+.num::after {
+  content: "";
+  position: absolute;
+  background: white;
+  left: 0;
+  bottom: -10px;
+  width: 63%;
+  height: 1px;
+}
+
+.imgLogoFooter {
+  width: 150px;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contactsInfo {
+  width: 50%;
+}
+
+.linksSocNet {
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.linksSocNet::after {
+  content: ""; /* Выводим пустое содержимое */
+  position: absolute; /* Абсолютное позиционирование */
+  background: #848484; /* Цвет линии */
+  left: 0; /* Положение линии слева */
+  bottom: -11px; /* Положение линии */
+  width: 100%; /* Линия на ширину текста */
+  height: 1px; /* Высота линии */
+}
+
+.linksItem {
+  width: 21px;
+}
+
+.pr {
+  font-family: "Manrope";
+  font-weight: 200;
+  font-size: 11px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-top: 35px;
+}
+
+@media (min-width: 744px) {
+  footer {
+    height: 474px;
+  }
+  .cont {
+    font-size: 24px;
+    line-height: 33px;
+    padding-top: 60px;
+  }
+  .num::after {
+    width: 53%;
+    bottom: -25px;
+  }
+  .imgLogoFooter {
+    width: 300px;
+  }
+  .linksSocNet {
+    margin-top: 84px;
+  }
+  .linksItem {
+    width: 42px;
+  }
+  .linksSocNet::after {
+    bottom: -20px; /* Положение линии */
+  }
+}
+@media (min-width: 1444px) {
+  .linksSocNet {
+    justify-content: space-around;
+  }
+  .imgLogoFooter {
+    width: 450px;
+  }
+}
+.support {
+  height: 1288px;
+  background: linear-gradient(180deg, #D2D5F5 0%, #F4F0CD 100%);
+}
+
+.supportText {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  padding-top: 30px;
+}
+
+.bold {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.supportItem {
+  border: 1px solid #54555D;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 8;
+  margin-bottom: 30px;
+}
+
+.supBtn {
+  width: 61%;
+  height: 50px;
+  border: none;
+  background: #0A0A0A;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 5px;
+}
+
+.supText {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #54555D;
+  margin: 0 auto;
+  width: 53%;
+}
+
+.supTextMain {
+  font-family: "Manrope", sans-serif;
+  font-size: 36px;
+  line-height: 49px;
+  color: #54555D;
+  margin-top: 15px;
+}
+
+.supportItems {
+  margin-top: 70px;
+}
+
+.formItem {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  line-height: 3;
+}
+
+.suggForm {
+  width: 63%;
+  text-align: center;
+  display: inline-block;
+  line-height: 4;
+}
+
+.formItem::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: #000000;
+}
+
+.subForm {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #0A0A0A;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 5px;
 }
 
 html {
