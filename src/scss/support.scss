@@ -1,6 +1,7 @@
 .support {
-    height: 1288px;
+    // height: 1288px;;
     background: linear-gradient(180deg, #D2D5F5 0%, #F4F0CD 100%);
+    padding-bottom: 1px;
 }
 
 .supportText {
@@ -95,3 +96,64 @@ line-height: 18px;
 border-radius: 5px;
 }
 
+
+
+
+
+@media (min-width: 744px) {
+   
+    .supTextMain {
+        font-size: 96px;
+line-height: 131px;
+    }
+    .supText {
+        font-size: 36px;
+line-height: 49px;
+    }
+    .bold {
+        font-size: 64px;
+line-height: 74px;
+      
+    }
+    .supportText {font-size: 48px;
+        line-height: 66px;
+       
+    }
+    .formItem::placeholder {
+    font-size: 30px;
+    }
+    .suggForm {
+        line-height: 6;
+        margin-top: 10px;
+    }
+    .supportItem {
+        margin-bottom: 60px;
+    }
+  
+   }
+
+   @media (min-width: 1444px) {
+    .supportItems {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     } .ml20 {
+     margin-left: 20px;
+   }
+   .supText {
+    font-size: 30px;
+line-height: 44px;
+}
+.formItem::placeholder {
+    font-size: 25px;
+  }
+  .bold {font-size: 110px;
+    line-height: 126px;
+  
+}
+.supportText {font-size: 96px;
+    line-height: 131px;
+   
+}
+
+}

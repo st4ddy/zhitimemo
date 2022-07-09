@@ -3,9 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@300;400;700&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -263,8 +261,8 @@ a {
   }
 }
 .support {
-  height: 1288px;
   background: linear-gradient(180deg, #D2D5F5 0%, #F4F0CD 100%);
+  padding-bottom: 1px;
 }
 
 .supportText {
@@ -358,6 +356,164 @@ a {
   border-radius: 5px;
 }
 
+@media (min-width: 744px) {
+  .supTextMain {
+    font-size: 96px;
+    line-height: 131px;
+  }
+  .supText {
+    font-size: 36px;
+    line-height: 49px;
+  }
+  .bold {
+    font-size: 64px;
+    line-height: 74px;
+  }
+  .supportText {
+    font-size: 48px;
+    line-height: 66px;
+  }
+  .formItem::placeholder {
+    font-size: 30px;
+  }
+  .suggForm {
+    line-height: 6;
+    margin-top: 10px;
+  }
+  .supportItem {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1444px) {
+  .supportItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ml20 {
+    margin-left: 20px;
+  }
+  .supText {
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .formItem::placeholder {
+    font-size: 25px;
+  }
+  .bold {
+    font-size: 110px;
+    line-height: 126px;
+  }
+  .supportText {
+    font-size: 96px;
+    line-height: 131px;
+  }
+}
+.ourPlansSlogan {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 45px;
+}
+
+.ourPlansLine {
+  border: 1px solid #000000;
+  width: 14%;
+}
+
+.ourPlansItem {
+  display: flex;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: space-between;
+  height: 75px;
+  margin-top: 15px;
+}
+
+.yellow {
+  background-color: #F4F0CD;
+}
+
+.black {
+  background-color: #212121;
+}
+
+.purple {
+  background-color: #D2D5F5;
+}
+
+.ourPlansText {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #212121;
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.ourPlansNumber {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #909090;
+  width: 20%;
+}
+
+.brLeft {
+  border-radius: 5px 0 0 5px;
+}
+
+.brRight {
+  border-radius: 0 5px 5px 0;
+}
+
+.ourPlansMain {
+  margin-top: 30px;
+}
+
+.ourPlansItem:last-child {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 744px) {
+  .ourPlansSlogan {
+    font-size: 48px;
+    line-height: 55px;
+    margin-top: 90px;
+  }
+  .ourPlansItem {
+    height: 182px;
+    margin-top: 40px;
+  }
+  .ourPlansText {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .ourPlansNumber {
+    font-size: 64px;
+    line-height: 74px;
+  }
+  .ourPlansMain {
+    margin-top: 60px;
+  }
+  .ourPlansItem:last-child {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1444px) {
+  .ourPlansSlogan {
+    font-size: 96px;
+    line-height: 110px;
+  }
+}
 html {
   box-sizing: border-box;
 }
