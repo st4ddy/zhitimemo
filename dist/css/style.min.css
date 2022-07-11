@@ -3,7 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@300;700&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -147,11 +149,144 @@ table {
   margin-top: 10px;
 }
 
+.wwdMain {
+  display: flex;
+  position: relative;
+}
 .wwdMain img {
   width: 100%;
   height: 100%;
 }
 
+@media (min-width: 320px) {
+  .wwdBackground {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .wwdButtom {
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    background: #FFCD00;
+    border-radius: 5px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin-top: 220px;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .wwdText {
+    font-family: "Ubuntu";
+    font-size: 13px;
+    color: #FFCD00;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 21px;
+    font-weight: 550;
+  }
+  .wwdHead {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10%;
+    font-weight: 600;
+  }
+  .weDooLine {
+    border: 1px solid black;
+  }
+}
+@media (min-width: 744px) {
+  .wwdBackground {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .wwdButtom {
+    position: absolute;
+    width: 440px;
+    height: 130px;
+    background: #FFCD00;
+    border-radius: 5px;
+    font-family: "Ubuntu";
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-top: 400px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .wwdText {
+    font-family: "Ubuntu";
+    font-size: 24px;
+    color: #FFCD00;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 21px;
+    font-weight: 550;
+  }
+  .wwdHead {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 10%;
+    font-weight: 600;
+  }
+  .weDooLine {
+    border: 1px solid black;
+  }
+}
+@media (min-width: 1444px) {
+  .wwdBackground {
+    position: absolute;
+    width: 735px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .wwdButtom {
+    position: absolute;
+    width: 440px;
+    height: 130px;
+    background: #FFCD00;
+    border-radius: 5px;
+    font-family: "Ubuntu";
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-top: 800px;
+    margin-left: 8%;
+  }
+  .wwdText {
+    font-family: "Ubuntu";
+    font-size: 24px;
+    color: #FFCD00;
+    font-weight: 500;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 550;
+    margin-top: 120px;
+  }
+  .wwdHead {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 200px;
+    font-weight: 600;
+  }
+  .weDooLine {
+    border: 1px solid black;
+  }
+}
 footer {
   height: 250px;
   width: 100%;
@@ -407,6 +542,487 @@ a {
   .supportText {
     font-size: 96px;
     line-height: 131px;
+  }
+}
+@media (min-width: 320px) {
+  .weWoWeDoHeaderr {
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .weWoWeDoHeader {
+    padding-top: 40px;
+  }
+  .weDooMaim {
+    justify-content: center;
+  }
+  .weDooLine {
+    width: 60px;
+    margin-top: 15px;
+  }
+  .weDooHeader {
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .weDooText {
+    font-family: "Ubuntu";
+    font-size: 13px;
+    text-align: center;
+  }
+  .weDooIcon {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 20px;
+  }
+  .weDoIconText {
+    font-family: "Ubuntu";
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .weDooIconLink {
+    width: 45px;
+    height: 45px;
+  }
+  .weWoWeDo {
+    margin-top: 20px;
+    width: 100%;
+    height: 760px;
+    background: linear-gradient(180deg, #D2D5F5 0%, #F4F0CD 100%);
+  }
+  .weWoWeDoTrup {
+    display: inline-flex;
+    margin-top: 45px;
+  }
+  .weWoWeDoHeader {
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .weWoWeDoText {
+    font-family: "Ubuntu";
+    font-size: 16px;
+    width: 240px;
+    height: 72px;
+    margin-left: 40px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .weWoWeDoTextBold {
+    font-weight: 900;
+  }
+  .weWoWeDoImg {
+    width: 55px;
+    height: 55px;
+    margin-left: 25px;
+  }
+}
+@media (min-width: 744px) {
+  .weDooLine {
+    margin-top: 10px;
+    width: 100px;
+  }
+  .weDooHeader {
+    font-family: "Ubuntu";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .weDooText {
+    font-family: "Ubuntu";
+    font-size: 25px;
+    text-align: center;
+  }
+  .weDooIcon {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 20px;
+  }
+  .weDoIconText {
+    font-family: "Ubuntu";
+    font-size: 17px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .weDooIconLink {
+    width: 100px;
+    height: 100px;
+  }
+  .weWoWeDoHeaderr {
+    font-family: "Ubuntu";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 120px;
+  }
+  .weWoWeDoHeader {
+    padding-top: 40px;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .weDooMaim {
+    justify-content: center;
+  }
+  .weeDooTg {
+    margin-left: 18%;
+    width: 100px;
+    height: 100px;
+  }
+  .weDooLine {
+    width: 100px;
+    margin-top: 15px;
+  }
+  .weWoWeDo {
+    margin-top: 20px;
+    width: 100%;
+    height: 1763px;
+    background: linear-gradient(180deg, #D2D5F5 0%, #F4F0CD 100%);
+  }
+  .weWoWeDoTrup {
+    display: inline-flex;
+    margin-top: 100px;
+  }
+  .weWoWeDoText {
+    font-family: "Ubuntu";
+    font-size: 32px;
+    width: 540px;
+    height: 176px;
+    line-height: 44px;
+    margin-left: 40px;
+    font-weight: 500;
+  }
+  .weWoWeDoTextBold {
+    font-weight: 900;
+  }
+  .weWoWeDoImg {
+    width: 120px;
+    height: 120px;
+    margin-left: 25px;
+  }
+}
+@media (min-width: 1444px) {
+  .weWoWeDo {
+    margin-top: 20px;
+    width: 100%;
+    height: 1263px;
+    background: linear-gradient(180deg, #D2D5F5 0%, #F4F0CD 100%);
+  }
+  .weDooMaim {
+    justify-content: center;
+  }
+  .weeDooTg {
+    margin-left: 20%;
+    width: 100px;
+    height: 100px;
+  }
+  .weDooLine {
+    width: 200px;
+    margin-top: 40px;
+  }
+  .weWoWeDoHeaderr {
+    font-family: "Ubuntu";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 120px;
+  }
+  .weDooHeader {
+    font-family: "Ubuntu";
+    font-size: 96px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .weDooText {
+    font-family: "Ubuntu";
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .weDooIcon {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 60px;
+  }
+  .weDoIconText {
+    font-family: "Ubuntu";
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .weDooIconLink {
+    width: 150px;
+    height: 150px;
+  }
+  .weWoWeDoTrup {
+    justify-content: center;
+    display: inline-flex;
+    margin-top: 110px;
+  }
+  .weWoWeDoHeader {
+    font-family: "Ubuntu";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .weWoWeDoText {
+    font-family: "Ubuntu";
+    font-size: 32px;
+    width: 540px;
+    height: 72px;
+    margin-left: 40px;
+    line-height: 44px;
+    font-weight: 500;
+  }
+  .weWoWeDoTextBold {
+    font-weight: 900;
+  }
+  .weWoWeDoImg {
+    width: 120px;
+    height: 120px;
+    margin-left: 25px;
+  }
+}
+@media (min-width: 1700px) {
+  .weWoWeDoTrup {
+    justify-content: center;
+    display: inline-flex;
+    margin-top: 110px;
+    margin-left: 150px;
+  }
+}
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .carousel-background {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    margin-top: 220px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .carousel-header {
+    font-family: "Ubuntu";
+    font-size: 32px;
+    color: #FFCD00;
+    font-weight: 700;
+    margin-left: 2.2%;
+    margin-top: 20px;
+  }
+  .carousel-text {
+    font-family: "Manrope";
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    width: 170px;
+    height: 54px;
+    text-align: center;
+    margin-left: 2.2%;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  .carousel__img {
+    width: 100%;
+    height: 425px;
+  }
+}
+@media (min-width: 744px) {
+  .carousel__img {
+    width: 100%;
+    height: 883px;
+  }
+}
+.carousel-background {
+  margin-top: 440px;
+}
+
+.carousel-header {
+  font-size: 64px;
+}
+
+.carousel-text {
+  width: 400px;
+  height: 132px;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: 1.8%;
+  margin-top: 50px;
+}
+
+.carousel {
+  margin: 20px;
+}
+.carousel__img {
+  margin: 0 auto;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0;
+}
+.slick-arrow::before {
+  display: table;
+}
+
+.slick-prev {
+  left: 0;
+}
+.slick-prev::before {
+  content: "˂";
+}
+
+.slick-next {
+  right: 0;
+}
+.slick-next::before {
+  content: "˃";
+}
+
+.slick-dots {
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.slick-dots button {
+  padding: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 0;
+}
+.slick-dots button:hover, .slick-dots button:focus {
+  opacity: 0.8;
+}
+
+.slick-active button {
+  background-color: #FFCD00;
+}
+
+@media (min-width: 1444px) {
+  .carousel-img {
+    width: 100%;
+    height: 883px;
   }
 }
 .ourPlansSlogan {

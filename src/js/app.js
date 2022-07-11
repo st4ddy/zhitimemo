@@ -1,7 +1,6 @@
-import * as flsFunctions from "./modules/functions.js";
+import $ from "jquery";
+import "slick-carousel";
 
-flsFunctions.isWebp();
-
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-const swiper = new Swiper();
+$(".carousel").slick({
+    dots: true
+});
