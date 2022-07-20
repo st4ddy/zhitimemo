@@ -1,29 +1,29 @@
 <main>
     <section class="ourPlans">
         <div class="container">
-            <h2 class="ourPlansSlogan">Наші плани</h2>
-            <hr class="ourPlansLine"/>
+            <h2 class="ourPlansSlogan lang" key="ourr">Наші плани</h2>
+            <hr class="ourPlansLine" />
             <div class="ourPlansMain">
                 <div class="ourPlansItem yellow">
-                    <div class="ourPlansText">Забезпечувати харчуванням та одягом усіх нужденних</div>
+                    <div class="ourPlansText lang" key="our1">Забезпечувати харчуванням та одягом усіх нужденних</div>
                     <div class="ourPlansNumber black brRight">1</div>
                 </div>
                 <div class="ourPlansItem purple">
                     <div class="ourPlansNumber black brLeft">2</div>
-                    <div class="ourPlansText ">Закупати транспорт та амуніцію для службовців</div>
-                    
+                    <div class="ourPlansText lang" key="our2">Закуповувати транспорт та амуніцію для військових</div>
+
                 </div>
                 <div class="ourPlansItem yellow">
-                    <div class="ourPlansText ">Відправляти гуманітарну допомогу у зону бойових дій</div>
+                    <div class="ourPlansText lang" key="our3">Відправляти гуманітарну допомогу в зону бойових дій</div>
                     <div class="ourPlansNumber black brRight">3</div>
                 </div>
                 <div class="ourPlansItem purple">
                     <div class="ourPlansNumber black brLeft">4</div>
-                    <div class="ourPlansText">Підтримувати та приймати участь у реабілітації поранених</div>
-                    
+                    <div class="ourPlansText lang" key="our4">Підтримувати та приймати участь у реабілітації поранених</div>
+
                 </div>
                 <div class="ourPlansItem yellow">
-                    <div class="ourPlansText ">Приймати участь у відбудові житла, зруйнованого орками</div>
+                    <div class="ourPlansText lang" key="our5">Приймати участь у відбудові житла, зруйнованого орками</div>
                     <div class="ourPlansNumber black brRight">5</div>
                 </div>
             </div>
@@ -32,29 +32,83 @@
 
     <section class="support">
         <div class="container">
-            <h2 class="supportText">
+            <h2 class="supportText lang" key="support1">
                 Працюємо з перших днів нападу росії на Україну і до повної <span class="bold">ПЕРЕМОГИ
                 </span></h2>
             <div class="supportItems">
                 <div class="supportItem">
                     <h4 class="supTextMain">01</h4>
-                    <p class="supText">Разова допомога на закупівлю та логістику</p>
-                    <a href="#"><button class="supBtn supLink">ДОПОМОГТИ</button></a>
+                    <p class="supText lang" key="support2">Разова допомога на закупівлю та логістику</p>
+                    <button class="supBtn supLink lang" key="donate" easy-toggle="#modalWin" easy-class="show"
+                        easy-rcoe >ДОПОМОГТИ</button>
+                    <div id="modalWin" class="modal">
+                        <div class="modalWindow">
+                            <h3 class="modalTitle">РЕКВІЗИТИ «ЖИТИМЕМО»</h3>
+                           <hr /> 
+                            <div class="modalItem">
+                                <div class="curr m0">UAH</div>
+                                <div class="requ">БО БЛАГОДІЙНИЙ ФОНД «ЖИТИМЕМО» IBAN
+                                    <n class="requ" id="text"> UA483052990000026000036234757</n>
+                                    КОД ЄДРПОУ 44708368</div><button class="copy" id="copy"><img class="copyIcon" src="@img/wedoo/copy.png" alt=""></button>
+                            </div>
+                            <hr /> 
+                            <div class="modalItem">
+                                <div class="curr m0">USD</div>
+                                <div class="requ">CO CHARITABLE FOUNDATION "WE WILL LIVE”
+                                    IBAN <n class="requ" id="text">UA873052990000026007036233041</n>
+                                    USREOU code 44708368</div><button class="copy" id="copy"><img class="copyIcon" src="@img/wedoo/copy.png" alt=""></button>
+                            </div>
+                            <hr /> 
+                            <div class="modalItem">
+                                <div class="curr m0">EUR</div>
+                                <div class="requ">CO CHARITABLE FOUNDATION "WE WILL LIVE”
+                                    <n class="requ" id="text">UA363052990000026002026234981</n>
+                                    USREOU code 44708368</div><button class="copy" id="copy"><img class="copyIcon" src="@img/wedoo/copy.png" alt=""></button>
+                            </div>
+                            <hr /> 
+                            <div class="modalItem">
+                                <div class="curr crypto">USDT<p>(TRC20)</p></div>
+                                <div class="requ cryptoWallet" id="text">TCqkLSW5aYrfQEna7tSRrBAReyxNsx7E7Q</div><button class="copy" id="copy"><img class="copyIcon" src="@img/wedoo/copy.png" alt=""></button>
+                            </div>
+                            <hr /> 
+                            <div class="modalItem">
+                                <div class="curr crypto">BTC<p>(BEP20)</p></div>
+                                <div class="requ cryptoWallet" id="text">0x0c7bd4c396cf2cb788d6470bf5d1dc7d8873a3c5</div><button class="copy" id="copy"><img class="copyIcon" src="@img/wedoo/copy.png" alt=""></button>
+                            </div>
+                            <hr /> 
+                            <div class="modalItem">
+                                <div class="curr crypto">ETH<p>(BEP20)</p></div>
+                                <div class="requ cryptoWallet" id="text">0x0c7bd4c396cf2cb788d6470bf5d1dc7d8873a3c5</div><button class="copy" id="copy"><img class="copyIcon" src="@img/wedoo/copy.png" alt=""></button>
+                            </div>
+
+                            <button class="btnClose" easy-remove="#modalWin" easy-class="show" easy-rcoe>X</button>
+                        </div>
+                        <div class="overlay" easy-toggle="#modalWin" easy-class="show" easy-rcoe></div>
+                    </div>
+                    <script>
+                        /*!
+ * EasyToggler v2.2.0 (https://github.com/rah-emil/easy-toggler#readme)
+ * Copyright 2022 Rah Emil <013131@mail.ru>
+ * Licensed under MIT (https://github.com/rah-emil/easy-toggler/blob/master/LICENSE)
+ */
+                        !function (e) { "function" == typeof define && define.amd ? define(e) : e() }((function () { "use strict"; function e(e, t) { const s = e.target.closest(`[${t.toggle}]`), o = e.target.closest(`[${t.remove}]`), l = e.target.closest(`[${t.add}]`); s && (e.preventDefault(), ((e, t) => { t.onToggle(e); const s = e.getAttribute(t.toggle); document.querySelectorAll(`[${t.toggle}]`).forEach((s => { if (!s.hasAttribute(t.parallel) && s !== e) { document.querySelector(s.getAttribute(t.toggle)).classList.remove(s.getAttribute(t.class)); const o = e.getAttribute(t.self); o && e.classList.remove(o) } })), document.querySelector(s)?.classList.toggle(e.getAttribute(t.class)); const o = e.getAttribute(t.self); o && e.classList.toggle(o) })(s, t)), o && (e.preventDefault(), ((e, t) => { t.onRemove(e); const s = e.getAttribute(t.remove), o = e.getAttribute(t.class); document.querySelectorAll(s).forEach((e => { e.classList.remove(o) })); const l = e.getAttribute(t.self); l && e.classList.remove(l) })(o, t)), l && (e.preventDefault(), ((e, t) => { t.onAdd(e); const s = e.getAttribute(t.add), o = e.getAttribute(t.class); document.querySelectorAll(s).forEach((e => { e.classList.add(o) })); const l = e.getAttribute(t.self); l && e.classList.add(l) })(l, t)), s || o || l || ((e, t) => { const s = document.querySelectorAll(`[${t.rcoe}]`); Array.from(s).forEach((s => { let o = s.getAttribute(t.toggle), l = s.getAttribute(t.class); if (!e.target.closest(o)) { t.onRcoe(s), document.querySelector(o)?.classList.remove(l); const e = s.getAttribute(t.self); e && s.classList.remove(e) } })) })(e, t) } const t = { toggle: "easy-toggle", add: "easy-add", remove: "easy-remove", class: "easy-class", rcoe: "easy-rcoe", parallel: "easy-parallel", self: "easy-self", selfRcoe: "easy-self-rcoe", onToggle(e) { }, onAdd(e) { }, onRemove(e) { }, onRcoe(e) { } }; document.addEventListener("DOMContentLoaded", (() => { document.addEventListener("click", (s => { e(s, t) })) })) }));
+//# sourceMappingURL=easy-toggler.min.js.map
+                    </script>
                 </div>
                 <div class="supportItem ml20">
                     <h4 class="supTextMain">02</h4>
-                    <p class="supText">Щомісячна підписка на зазначему суму</p>
-                    <a href="#"><button class="supBtn supLink">СПОНСОРСТВО</button></a>
+                    <p class="supText lang" key="support3">Щомісячна підписка на зазначену суму</p>
+                    <a href="https://www.patreon.com/wewilllive"><button class="supBtn supLink lang" key="sponsor">СПОНСОРСТВО</button></a>
                 </div>
                 <div class="supportItem">
                     <h4 class="supTextMain">03</h4>
-                    <p class="supText">Якщо ви маєте пропозиції щодо співпраці</p>
-                    <form class="suggForm" action="">
-                        <input class="formItem textForm" type="text" placeholder="Ваше ім’я" required>
-                        <input class="formItem phoneForm" type="phone" placeholder="Ваш номер телефону" required>
-                        <input class="formItem mailForm" type="email" placeholder="Ваш email" required>
-                        <input class="formItem suggTextForm" type="text" placeholder="Ваша пропозиція" required>
-                        <a href=""><input class="subForm" type="submit" value="Надіслати"></a>
+                    <p class="supText lang" key="support4">Якщо ви маєте пропозиції щодо співпраці</p>
+                    <form class="suggForm" action="https://formspree.io/f/xeqnyeqv" method="POST">
+                        <input name="email" class="formItem textForm lang" key="email" type="text"
+                            placeholder="Ваш email, або номер телефону" required>
+                        <input name="message" class="formItem phoneForm lang"  key="phone" type="phone" placeholder="Ваша пропозиція"
+                            required>
+                        <a href=""><button class="subForm lang" key="submit" type="submit">Надіслати</button></a>
                     </form>
                 </div>
             </div>

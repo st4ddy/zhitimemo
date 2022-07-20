@@ -15,7 +15,7 @@
     .wwdBackground {
         position: absolute;
         width: 100%;
-        height: 50%;
+        height: 60%;
         background-color: rgba(0,0,0,0.6);
     }
     .wwdButtom {
@@ -35,11 +35,15 @@
     .wwdText {
         font-family: 'Ubuntu';
         font-size: 13px;
-        color:#FFCD00;
+        color:#00cf1c;
         font-weight: 500;
         text-align: center;
         margin-top: 21px;
         font-weight: 550;
+    }
+    .donetsk {
+        margin-top: 10px;
+        color:#FFCD00;
     }
     .wwdHead {
         font-family: 'Ubuntu';
@@ -80,7 +84,6 @@
     .wwdText {
         font-family: 'Ubuntu';
         font-size: 24px;
-        color:#FFCD00;
         font-weight: 500;
         text-align: center;
         margin-top: 21px;
@@ -101,6 +104,10 @@
 }
 
 @media (min-width: 1444px) {
+    .wwdMain {
+        overflow: hidden;
+        height: 900px;
+    }
     .wwdBackground {
         position: absolute;
         width: 735px;
@@ -117,13 +124,12 @@
         font-size: 40px;
         color: black;
         font-weight: bold;
-        margin-top: 800px;
+        margin-top: 600px;
         margin-left: 8%;
     }
     .wwdText {
         font-family: 'Ubuntu';
         font-size: 24px;
-        color:#FFCD00;
         font-weight: 500;
         text-align: center;
         font-size: 32px;
